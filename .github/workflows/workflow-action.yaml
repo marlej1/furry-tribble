@@ -10,7 +10,7 @@ jobs:
       - name: checkout code
         uses: actions/checkout@v2
 
-      - run: echo "runner path {{github.workspace}}"
+      - run: echo runner path ${{github.workspace}}
 
       - name: list all files
         run: ls ${{github.workspace}}
