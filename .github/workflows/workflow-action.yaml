@@ -22,5 +22,11 @@ jobs:
 
       - name: show dotnet version
         run: dotnet --version
-          
+        
+  second-job:
+    name: Expolaration continued
+    runs-on: ubuntu-latest
+    needs: example-job
+    steps:
+      - run: echo "second job {{github.event_name}}" 
     
